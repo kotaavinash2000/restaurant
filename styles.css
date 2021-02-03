@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+}
+.info{
+    background-color: #60efff;
+    padding:1.5rem 0.5rem;
+}
+.primary-color{
+    color:rgb(245, 48, 48);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.info a{
+    transition: color 2s ease-in-out;
+}
+.info a:hover{
+    color: black;
+}
+#header{
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height:80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.height{
+    height: 80vh;
+}
+.tex{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.main-text{
+    justify-content: center;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    25%{
+        transform: translateX(-100px);
+        opacity: 0.5;
+    }
+    75%{
+        transform: translateX(50px);
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.main-btn{
+    color: #d3325f;
+    font-size: 2rem;
+    border: 2px solid #d3325f;
+}
+.main-btn:hover{
+    color:#d3325f;
+    border: 2px solid #c9c1ac;
+    background-color: beige;
+}
+.image{
+    width: 22%;
+    height: 28vh;
+    margin-right: 5px;
+    padding: 0 10px;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.image:hover{
+    outline: 10px solid #d3325f;
+    outline-offset: 0.8rem;
+}
+.second{
+    background-image: url("https://images.pexels.com/photos/3937468/pexels-photo-3937468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.chef{
+    padding: 3rem 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: darkturquoise;
+}
+@media only screen and (max-width:1080px){
+    .image{
+        height:20vh;
+        width: 22%;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+}
+.foodie{
+    margin: 0 0.8rem;
+    flex-wrap: wrap;
+
+}
+.food{
+    font-size: 2rem;
+
+
+}
+h4{
+    margin-bottom: 5rem;
+}
+.item{
+font-size: 4rem;
+color:red;
+font-weight: 600;
+letter-spacing: 2px;
+}
+#cost{
+    background-image: url("https://images.pexels.com/photos/3305/numbers-money-calculating-calculation.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+p{
+    width:50%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.sig{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.last{
+    height: 75vh;
+    background-color: burlywood;
+}
+.last img{
+    height: 40vh;
+    width: 40%;
+    margin: 1rem 12rem;
+}
+
+@media only screen and (max-width:1080px){
+    .last{
+        height: 100vh;
+    }
+    .last img{
+        margin:1rem;
+    }
+}
